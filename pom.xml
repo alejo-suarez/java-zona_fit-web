@@ -15,7 +15,7 @@
 	<description>Sistema de zona fit</description>
 	<properties>
 				<java.version>17</java.version>
-				<joinfaces.version>5.1.2</joinfaces.version>
+				<joinfaces.version>5.4.3</joinfaces.version>
 	</properties>
 	<dependencies>
 			<dependency>
@@ -46,9 +46,9 @@
 					<scope>test</scope>
 		    </dependency>
 		    <dependency>
-		    		<groupId>com.formdev</groupId>
-		    		<artifactId>flatlaf</artifactId>
-		    		<version>3.5</version>
+		    		<groupId>com.h2database</groupId>
+		    		<artifactId>h2</artifactId>
+		    		<scope>test</scope>
 		    </dependency>
 	</dependencies>
 	
@@ -57,7 +57,7 @@
 				<dependency>
 						<groupId>org.joinfaces</groupId>
 						<artifactId>joinfaces-platform</artifactId>
-						<version>5.4.3</version>
+						<version>${joinfaces.version}</version>
 						<type>pom</type>
 						<scope>import</scope>
 				</dependency>
@@ -83,6 +83,7 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-maven-plugin</artifactId>
 					<configuration>
+							<mainClass>js.zona_fit.ZonaFitWeb</mainClass>
 							<excludes>
 									<exclude>
 											<groupId>org.projectlombok</groupId>
