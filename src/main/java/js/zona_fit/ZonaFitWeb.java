@@ -8,6 +8,4 @@ public class ZonaFitWeb {
 	public static void main(String[] arg) {
 			SpringApplication.run(ZonaFitWeb.class, arg);
 	}
-	
-
 }
